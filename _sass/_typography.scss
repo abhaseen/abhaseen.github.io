@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Ubuntu&family=Kaushan+Script&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.125rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.9rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+.brand-text {
+  font-family: "Kaushan Script", serif;
+}
+
+@include mq {
+  body {
+    font-size: 1.25rem;
+  }
+}

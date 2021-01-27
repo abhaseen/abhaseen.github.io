@@ -1,0 +1,62 @@
+.post {
+  p {
+    padding: 1.5em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+    padding: 1em;
+  }
+
+  hr {
+    margin-bottom: 1em;
+  }
+
+  ul {
+    padding: 1.5em;
+    width: 90%;
+    margin: auto;
+  }
+
+  ul li {
+    list-style: square;
+  }
+
+  img {
+    max-height: 90vh;
+    object-fit: scale-down;
+  }
+}
+
+.post-header {
+  padding: 1.5em;
+  text-align: center;
+}
+
+.post-title {
+  margin-bottom: 1em;
+}
+
+.post-date {
+  font-size: inherit;
+}
+
+.post-category {
+  padding: 1.5em;
+}
+
+.post-description {
+  padding: 1.5em;
+}
+
+@include mq {
+  .post-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}

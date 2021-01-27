@@ -1,0 +1,54 @@
+.skills {
+  min-height: 50vh;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-sub-section {
+  padding: 1.5em;
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-image-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills img {
+  max-height: 64px;
+  min-width: 48px;
+  max-width: 128px;
+  padding: 5px;
+  margin: 5px;
+  object-fit: scale-down;
+}
+
+figure {
+  padding: 0.25em;
+
+  display: grid;
+  justify-items: center;
+}
+
+@include mq {
+  .skills-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

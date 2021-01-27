@@ -1,0 +1,55 @@
+.categories {
+  padding-top: var(--nav-offset);
+  text-align: center;
+}
+
+.accordion-container {
+  text-align: center;
+  min-height: 65vh;
+
+  p {
+    padding: 1em;
+  }
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  transition: 300ms;
+}
+
+.accordion.active,
+.accordion:hover,
+.accordion:focus {
+  background-color: #ccc;
+}
+
+.accordion-header {
+  cursor: pointer;
+
+  padding: 1.5rem;
+  transition: background-color 250ms ease;
+
+  &.active {
+    background-color: white;
+  }
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 250ms ease-out;
+}
+
+@include mq {
+  .accordion-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

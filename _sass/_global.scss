@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+  --nav-offset: 5em;
+
+  --btn-primary-clr: dodgerblue;
+  --btn-primary-hover-clr: navy;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover:not(.btn),
+a:focus:not(.btn) {
+  text-decoration: underline;
+  color: dodgerblue;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1em;
+  background-color: var(--btn-primary-clr);
+  border-radius: 4px;
+  color: white;
+}
+
+.btn {
+  padding: 2em;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem;
+  background-color: var(--btn-primary-clr);
+  border-radius: 4px;
+  color: white;
+  transition-property: background-color, color, box-shadow, transform;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--btn-primary-hover-clr);
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+.btn:active {
+  font-size: 90%;
+}
+
+.btn-container {
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+}
+
+section {
+  padding: 1.5em;
+}
+
+section:first-of-type {
+  padding-top: var(--nav-offset);
+}
+
+section:nth-of-type(2) {
+  min-height: 75vh;
+}
+
+.section-heading {
+  padding: 1.25rem;
+  text-transform: uppercase;
+}
+
+.page-header {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  min-height: 25vh;
+  padding-top: var(--nav-offset);
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+hr {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+  border: 0;
+  height: 1px;
+}

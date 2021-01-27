@@ -1,0 +1,20 @@
+<div class="project-details">
+    <img src="{{ site.baseurl }}/img/portfolio/{{ post.img }}" alt="">
+
+    <h2>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="project-title">
+            {{ post.title }}
+        </a>
+    </h2>
+    <p class="project-category">
+        Tags:
+        {% for tag in post.tags %}
+        <em>
+            {{ tag }}{% if forloop.last == true %}{% else %}, {% endif %}
+        </em>
+        {% endfor %}
+    </p>
+    <p class="project-description">
+        {{ post.excerpt | strip_html | truncatewords: 150 }}
+    </p>
+</div>
