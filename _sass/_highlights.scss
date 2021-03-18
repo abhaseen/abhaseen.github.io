@@ -3,13 +3,19 @@
   text-align: center;
 }
 
+.hightlights-message {
+  margin-bottom: 2em;
+}
+
 .highlights-item-container {
   padding: 10px;
 }
 
 .highlights-item {
   padding: 1em;
-  margin-bottom: 10px;
+  margin-bottom: 2em;
+  border-radius: 0.625rem;
+  box-shadow: 0 0 4px 2px rgba(dodgerblue, 0.75);
 }
 
 .highlights-preview-img {
@@ -22,15 +28,28 @@
   border: 1px solid black;
 }
 
-.highlights-caption a {
+.highlights-caption {
+  & > p {
+    text-align: left;
+  }
+}
+
+.highlight-title {
   display: inline-block;
-  width: 20ch;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  margin-bottom: 1em;
+}
+
+.highlight-body {
+  text-align: left;
 }
 
 @include mq {
+  .highlights-item {
+    & + & {
+      margin-left: 2em;
+    }
+  }
+
   .highlights-item-container {
     width: 80%;
     margin: auto;

@@ -1,23 +1,19 @@
 <section id="highlights" class="highlights">
   <h2 class="section-heading">Highlights</h2>
-  <p>
+  <p class="hightlights-message">
     Recent highlights shown here, see All Projects for a complete list.
   </p>
   <article class="highlights-item-container">
     {% for post in site.posts limit:6 %}
     <div class="highlights-item">
 
-      <!-- <img src="{{ post.img }}" id="lightboxImg" class="highlights-preview-img" alt="" data-title="{{ post.title }}"
-        data-category="{{ post.category }}" data-link="{{ post.url | relative_url }}" /> -->
-
       <div class="highlights-caption">
-        <h4>
+        <h4 class="highlight-title">
           <a href="{{ post.url | relative_url }}">
             {{ post.title }}
           </a>
         </h4>
-        <p>{{ post.excerpt | truncatewords: 50 }}</p>
-        <p class="project-category">{{ post.category }}</p>
+        {{ post.excerpt | truncatewords: 50 }}
       </div>
     </div>
     {% endfor %}
