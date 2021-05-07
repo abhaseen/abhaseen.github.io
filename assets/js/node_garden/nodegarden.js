@@ -14,11 +14,12 @@ export default class NodeGarden {
     this.started = false;
     this.nightmode = false;
 
-    if (devicePixelRatio && devicePixelRatio !== 1) {
-      // if retina screen, scale canvas
-      this.canvas.style.transform = "scale(" + 1 / devicePixelRatio + ")";
-      this.canvas.style.transformOrigin = "0 0";
-    }
+    // if (devicePixelRatio && devicePixelRatio !== 1) {
+    //   // if retina screen, scale canvas
+    //   console.log(devicePixelRatio);
+    //   this.canvas.style.transform = "scale(" + 1 / devicePixelRatio + ")";
+    //   this.canvas.style.transformOrigin = "0 0";
+    // }
     this.canvas.id = "nodegarden";
 
     window.addEventListener("mousedown", (e) => {
@@ -73,8 +74,10 @@ export default class NodeGarden {
   }
 
   resize() {
-    this.width = this.container.clientWidth * devicePixelRatio;
-    this.height = this.container.clientHeight * devicePixelRatio;
+    // this.width = this.container.clientWidth * devicePixelRatio;
+    // this.height = this.container.clientHeight * devicePixelRatio;
+    this.width = this.container.clientWidth;
+    this.height = this.container.clientHeight;
     this.area = this.width * this.height;
 
     // calculate nodes needed
