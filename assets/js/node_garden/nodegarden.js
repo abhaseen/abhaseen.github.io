@@ -31,8 +31,10 @@ export default class NodeGarden {
       };
       // Add mouse node
       const mouseNode = new Node(this);
-      mouseNode.x = (e.pageX - scrollPos.x - bcr.left) * devicePixelRatio;
-      mouseNode.y = (e.pageY - scrollPos.y - bcr.top) * devicePixelRatio;
+      // mouseNode.x = (e.pageX - scrollPos.x - bcr.left) * devicePixelRatio;
+      // mouseNode.y = (e.pageY - scrollPos.y - bcr.top) * devicePixelRatio;
+      mouseNode.x = e.pageX - scrollPos.x - bcr.left;
+      mouseNode.y = e.pageY - scrollPos.y - bcr.top;
       mouseNode.m = 15;
 
       mouseNode.update = () => {};
@@ -42,8 +44,10 @@ export default class NodeGarden {
       this.nodes.unshift(mouseNode);
 
       window.addEventListener("mousemove", (e) => {
-        mouseNode.x = (e.pageX - scrollPos.x - bcr.left) * devicePixelRatio;
-        mouseNode.y = (e.pageY - scrollPos.y - bcr.top) * devicePixelRatio;
+        // mouseNode.x = (e.pageX - scrollPos.x - bcr.left) * devicePixelRatio;
+        // mouseNode.y = (e.pageY - scrollPos.y - bcr.top) * devicePixelRatio;
+        mouseNode.x = e.pageX - scrollPos.x - bcr.left;
+        mouseNode.y = e.pageY - scrollPos.y - bcr.top;
       });
 
       window.addEventListener("mouseup", (e) => {
