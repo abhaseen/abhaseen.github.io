@@ -191,17 +191,23 @@ nav.top-nav {
   }
 
   .page-item {
-    padding: 0.5em;
     background-color: black;
     border: 1px solid black;
 
     display: flex;
+    align-items: center;
     justify-items: center;
 
     transition: background-color 150ms ease-in;
 
     a {
       color: inherit;
+      padding: 0.5em;
+    }
+
+    .page-link {
+      color: inherit;
+      padding: 0.5em;
     }
 
     a:hover,
