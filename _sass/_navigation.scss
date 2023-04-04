@@ -2,7 +2,6 @@ header.navbar {
   --navbar-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
   background: black;
   color: white;
-  // position: fixed;
 
   position: fixed;
   top: 0;
@@ -148,7 +147,6 @@ nav.top-nav {
 
   & li {
     list-style: none;
-    padding: 0.5em;
 
     display: flex;
     position: relative;
@@ -156,6 +154,7 @@ nav.top-nav {
     transition: all 250ms ease;
 
     a {
+      padding: 0.5em;
       text-transform: uppercase;
       color: inherit;
     }
@@ -291,7 +290,6 @@ nav.top-nav {
   nav.top-nav {
     opacity: 1;
     max-height: 100%;
-    padding: 0 2rem;
 
     & ul {
       transform: scale(1);
