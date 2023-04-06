@@ -7,7 +7,7 @@
   padding: 1rem;
 
   p {
-    padding: 1rem;
+    margin: 1rem 0;
   }
 
   img {
@@ -17,8 +17,8 @@
 }
 
 .project-title {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .project-category {
@@ -42,11 +42,11 @@
 
 @include mq {
   .projects {
-    padding: 2em;
+    max-width: var(--screen-max-width);
+    margin: 0 auto;
   }
 
   .project-details {
-    max-width: 1000px;
-    margin: auto;
+    padding: 2rem 0;
   }
 }

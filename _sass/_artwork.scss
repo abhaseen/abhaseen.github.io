@@ -1,0 +1,13 @@
+.artwork-summary {
+  padding: 2rem 0;
+}
+
+.artwork-thumb {
+  border-radius: 0.5rem;
+}
+
+@include mq {
+  .artwork-thumb {
+    max-width: 48rem;
+  }
+}

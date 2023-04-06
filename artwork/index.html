@@ -1,0 +1,18 @@
+---
+layout: default
+title: Art
+---
+
+{% include page_header.html %}
+
+<section class="projects">
+    {% for art in site.artwork %}
+    <article class="artwork-summary">
+        <h2 class="project-title">
+            <a href="{{ art.url }}">{{ art.title }}</a>
+        </h2>
+        <a href="{{ art.url }}"><img class="post-image artwork-thumb" src="{{ art.img }}" alt="{{ art.title }}" /></a>
+    </article>
+    <hr>
+    {% endfor %}
+</section>
