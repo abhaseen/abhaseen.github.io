@@ -46,6 +46,11 @@ figure {
 }
 
 @include mq {
+  .skills {
+    max-width: var(--screen-max-width);
+    margin: 0 auto;
+  }
+
   .skills-container {
     flex-direction: row;
     flex-wrap: wrap;
