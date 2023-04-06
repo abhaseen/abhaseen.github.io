@@ -12,6 +12,8 @@
 
   --btn-primary-clr: dodgerblue;
   --btn-primary-hover-clr: navy;
+
+  --screen-max-width: 96ch;
 }
 
 body.no-scroll {
@@ -67,7 +69,7 @@ button {
 .btn-container {
   width: 100%;
   text-align: center;
-  padding: 1em;
+  margin-top: 4rem;
 }
 
 section {
