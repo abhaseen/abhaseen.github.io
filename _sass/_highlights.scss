@@ -1,5 +1,4 @@
 .highlights {
-  min-height: 50vh;
   text-align: center;
 }
 
@@ -36,9 +35,14 @@
 }
 
 @include mq {
+  .highlights {
+    max-width: var(--screen-max-width);
+    margin: 0 auto;
+  }
+
   .highlights-item-container {
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
