@@ -6,12 +6,10 @@ layout: default
 
 <section class="post">
   <div class="post-wrapper">
-    <header class="post-header">
-      <h2 class="post-date">{{ page.date | date_to_long_string }}</h2>
-    </header>
-    <hr />
     {% if page.img %}
-    <img src="{{ site.baseurl }}/img/portfolio/{{ page.img }}" alt="" />
+    <a href="{{ page.img }}">
+      <img class="post-image" src="{{ page.img }}" alt="{{ page.title }}" />
+    </a>
     {% endif %}
     {% if page.audiosrc %}
     <div class="audio-container">

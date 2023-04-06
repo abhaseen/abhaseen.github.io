@@ -1,8 +1,10 @@
 <div class="project-details">
-    <img src="{{ site.baseurl }}/img/portfolio/{{ post.img }}" alt="">
+    {% if post.img %}
+    <img src="{{ post.img }}" alt="{{ post.title }}">
+    {% endif %}
 
-    <h2>
-        <a href="{{ post.url | prepend: site.baseurl }}" class="project-title">
+    <h2 class="project-title">
+        <a href="{{ post.url | prepend: site.baseurl }}">
             {{ post.title }}
         </a>
     </h2>
