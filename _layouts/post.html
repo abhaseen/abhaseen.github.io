@@ -4,35 +4,7 @@ layout: default
 
 {% include page_header.html %}
 
-<section class="post">
-  <div class="post-wrapper">
-    {% if page.img %}
-    <a href="{{ page.img }}">
-      <img class="post-image" src="{{ page.img }}" alt="{{ page.title }}" />
-    </a>
-    {% endif %}
-    {% if page.audiosrc %}
-    <div class="audio-container">
-      <audio controls>
-        <source src="{{ site.baseurl }}/audio/{{ page.audiosrc }}" type="audio/ogg" />
-        Your browser does not support the audio element.
-      </audio>
-    </div>
-    {% endif %}
-
-    <h3 class="post-category">
-      Tags:
-      {% for tag in page.tags %}
-      <strong>{{ tag }}{% if forloop.last == true %}{% else %}, {% endif %}</strong>
-      {% endfor %}
-    </h3>
-
-    <p class="post-description">{{ page.description }}</p>
-
-    <hr />
-    {{ content }}
-  </div>
-</section>
+{% include post_details.html %}
 
 <div class="btn-container">
   <a class="btn" href="{{ site.baseurl }}/projects" role="button">Back to Projects</a>
