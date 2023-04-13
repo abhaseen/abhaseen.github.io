@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: artwork
 title: "First Dungeon"
 img: /assets/images/art/FirstDungeonAssets_watermarked.jpg
 tags: ["Art", "Level Design"]

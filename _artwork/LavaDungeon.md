@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: artwork
 title: "Lava Dungeon"
 img: /assets/images/art/FireDungeon_watermarked.jpg
 tags: ["Art", "Level Design"]

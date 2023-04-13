@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: artwork
 title: "Tomb Of The Dark Elf"
 img: /assets/images/art/TombOfTheDarkElf_v2_watermarked.jpg
 tags: ["Art"]

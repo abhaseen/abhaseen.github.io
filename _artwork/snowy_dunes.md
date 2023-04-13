@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: artwork
 title: "Snowy Dunes"
 img: /assets/images/art/SnowyDunes_TheExiledPrince_v2_watermarked.jpg
 tags: ["Art"]
