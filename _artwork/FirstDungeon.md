@@ -3,7 +3,7 @@ layout: artwork
 title: "First Dungeon"
 img: /assets/images/art/FirstDungeonAssets_watermarked.jpg
 tags: ["Art", "Level Design"]
-index: 6
+index: 5
 ---
 
 This art piece showcases the finalized art assets for the exterior of the first dungeon accessed at the very begining of the game from the overworld.
